@@ -47,7 +47,7 @@ condition && // Code to execute if condition is true
 // 6. Logical || (OR) Operator
 // Similarly, you can use the || operator to run code if a condition is false. This is often used for default values.
 
-let name = inputName || "Guest"; // If inputName is falsy, "Guest" will be used.
+let name1 = inputName || "Guest"; // If inputName is falsy, "Guest" will be used.
 
 
 // 7. Switch Statement
@@ -76,50 +76,44 @@ if (user?.profile?.name) {
 // 9. Nullish Coalescing Operator
 // The nullish coalescing operator (??) is a logical operator that returns the first non-null or non-undefined value in a sequence of expressions.
 
-let name = inputName ?? "Guest"; // If inputName is falsy, "Guest" will be used.
+let name2 = inputName ?? "Guest"; // If inputName is falsy, "Guest" will be used.
 
 
 // 10. Ternary Operator with Nullish Coalescing
 // You can combine the nullish coalescing operator with a ternary operator to provide a default value for a variable.
 
-let name = inputName ?? "Guest";
+let name3 = inputName ?? "Guest";
 
 
 // 11. Ternary Operator with Logical && Operator
 // You can combine the logical && operator with a ternary operator to provide a default value for a variable.
 
-let name = inputName && "Guest";
+let name4 = inputName && "Guest";
 
 
 // 12. Ternary Operator with Logical || Operator
 // You can combine the logical || operator with a ternary operator to provide a default value for a variable.
 
-let name = inputName || "Guest";
+let name5 = inputName || "Guest";
 
 
 // 13. Ternary Operator with Logical && Operator
 // You can combine the logical && operator with a ternary operator to provide a default value for a variable.
 
-let name = inputName && "Guest";
+let name6 = inputName && "Guest";
 
 
 // 14. Ternary Operator with Logical || Operator
 // You can combine the logical || operator with a ternary operator to provide a default value for a variable.
 
-let name = inputName || "Guest";
+let name7 = inputName || "Guest";
 
+// Conditional if with return (Simplified if)
+// You can also write a simple if block that returns based on a condition, similar to what you mentioned.
 
-Conditional if with return (Simplified if)
-You can also write a simple if block that returns based on a condition, similar to what you mentioned.
+// if (condition) return value;
+// This works when you want to return a value from a function immediately if the condition is true.
 
-    javascript
-Copy code
-if (condition) return value;
-This works when you want to return a value from a function immediately if the condition is true.
-
-    Example:
-javascript
-Copy code
 function checkNumber(x) {
     if (x > 10) return "Greater than 10";
     return "Less than or equal to 10";
@@ -127,15 +121,10 @@ function checkNumber(x) {
 
 console.log(checkNumber(15)); // "Greater than 10"
 console.log(checkNumber(5));  // "Less than or equal to 10"
-With Arrow Functions(Implicit Return & if)
-For arrow functions, you can combine an if statement directly with the implicit return for concise logic.
 
-    javascript
-Copy code
+// With Arrow Functions(Implicit Return & if)
+// For arrow functions, you can combine an if statement directly with the implicit return for concise logic.
+
 const checkNumber = (x) => x > 10 ? "Greater than 10" : "Less than or equal to 10";
 console.log(checkNumber(15)); // "Greater than 10"
 console.log(checkNumber(5));  // "Less than or equal to 10"
-In summary:
-
-Ternary operator is ideal for simple conditional logic on a single line.
-if return shorthand can be used for more complex conditional returns in functions.
