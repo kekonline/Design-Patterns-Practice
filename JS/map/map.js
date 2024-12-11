@@ -51,7 +51,7 @@ const users5 = [
     { name: 'Bob', age: 30 },
 ];
 
-const names5 = users5.map(({ name5 }) => name5);  // Destructuring objects
+const names5 = users5.map(({ name5 }) => name);  // Destructuring objects
 
 console.log(names5);  // ['Alice', 'Bob']
 
